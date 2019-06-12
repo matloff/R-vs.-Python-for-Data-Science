@@ -14,7 +14,7 @@ the topic.  I have the potential bias &mdash; I've written 4 R-related books,
 and currently serve as Editorr-in-Chief of the *R Journal* &mdash; but I hope
 this analysis will be considered fair and helpful.
 
-**Elegance:**
+## Elegance
 
 *Clear win for Python.* This is subjective, of course, but having
 written (and taught) in many different programming languages, I really
@@ -26,4 +26,26 @@ if x > y:
    w = 8
 ```
 
+vs.
+
+``` r
+if (x > y)
+{ 
+   z = 5
+   w = 8
+}
+```
+
+Python is sleek!
+
+## Learning curve
+
+*Huge win for R*.  To even get started in Data Science with Python, one
+must learn a lot of material not in base Python, e,g, NumPy, Pandas and
+matplotlib.  By contrast, matrix types and basic graphics are build-in
+to base R.  The novice can be doing simple data analyses within minutes.
+Python libraries can be tricky to configure, even for the systems-savvy,
+while most R packages run right out of the box.
+
+(much more coming!)
 
