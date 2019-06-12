@@ -42,10 +42,36 @@ Python is sleek!
 
 *Huge win for R*.  To even get started in Data Science with Python, one
 must learn a lot of material not in base Python, e,g, NumPy, Pandas and
-matplotlib.  By contrast, matrix types and basic graphics are build-in
+matplotlib.  
+
+By contrast, matrix types and basic graphics are build-in
 to base R.  The novice can be doing simple data analyses within minutes.
 Python libraries can be tricky to configure, even for the systems-savvy,
 while most R packages run right out of the box.
+
+## Available libraries
+
+*Huge win for R*. [CRAN](https://cran.r-project.org/) has over 12,000
+packages, extremely useful.
+
+For example, I once needed code to find nearest-neighbors of a given
+data point.  I was able to immediately find not one but two packages to
+do this.  By contrast, lacking a central repository like CRAN for
+Python, just now I tried to find nearest-neighbor code for that
+language, and at least with my cursory search, came up empty-handed.
+I did fit, e.g. Sci-kit code to do nearest-neighbor *classification*,
+but not k-NN code itself.
+
+## Machine learning
+
+*Slight edge to Python here*. The Pythonistas would point to a number of
+very finely-tuned libraries, e.g. AlexNet, for image recognition.  Good,
+but R versions easily could be developed. The Python libraries' power
+comes from setting certain image-smoothing ops, which easily could be
+implemented in R's [Keras](https://keras.rstudio.com/) wrapper, and for
+that matter, a pure-R version of TensorFlow could be developed.
+Meanwhile, I would claim that R's package availabity for random forests
+and gradient boosting are outstandng.
 
 (much more coming!)
 
