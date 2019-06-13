@@ -56,7 +56,7 @@ while most R packages run right out of the box.
 
 *Call it a tie.*
 
-[CRAN](https://cran.r-project.org/) has over 12,000
+[CRAN](https://cran.r-project.org/) has over 14,371 in addition to several other packages that are in [GitHub](https://github.com/).
 packages. [PyPI](https://pypi.org/) has over 183,000,
 but it seems thin on Data Science.
 
@@ -182,3 +182,6 @@ environments and the like.
 At present, I do not recommend writing mixed Python/R code.
 
 
+## GraalVM
+
+[**GraalVM**](https://www.graalvm.org/) implementation of R, also known as FastR, is compatible with GNU R, can run R code at unparalleled performance, integrates with the GraalVM ecosystem and provides additional R level features.
