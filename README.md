@@ -55,19 +55,23 @@ while most R packages run right out of the box.
 
 ## Available libraries
 
-*Call it a tie.*. 
+*Call it a tie.*
 
 [CRAN](https://cran.r-project.org/) has over 12,000
 packages. [PyPI](https://pypi.org/) has over 183,000,
 but it seems thin on Data Science.
 
-For example, I once needed code to find nearest-neighbors of a given
-data point.  (NOT code using that to do classification.)
-I was able to immediately find not one but two packages to
-do this.  By contrast, just now I tried to find nearest-neighbor code
+For example, I once needed code to do fast calculation of
+nearest-neighbors of a given data point.  (NOT code using that to do
+classification.) I was able to immediately find not one but two packages
+to do this.  By contrast, just now I tried to find nearest-neighbor code
 for Python and at least with my cursory search, came up empty-handed;
 there was just one implementation that described itself as simple and
 straightforward, nothing fast.
+
+The following searches in PyPI turned up nothing: log-linear model;
+Poisson regression; instrumental variables; spatial
+data; familywise error rate; etc.
 
 ## Machine learning
 
@@ -164,7 +168,7 @@ advanced users.
 
 ## Linked data structures
 
-*Win for Python.*
+*Likely win for Python.*
 
 Classical computer science data structures, e.g. binary trees, are easy
 to implement in Python.  While this can be done in R using its 'list'
