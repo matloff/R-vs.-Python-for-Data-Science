@@ -55,18 +55,18 @@ while most R packages run right out of the box.
 
 ## Available libraries
 
-*Huge win for R*. 
+*Call it a tie.*. 
 
 [CRAN](https://cran.r-project.org/) has over 12,000
-packages, extremely useful.
+packages. [PyPI](https://pypi.org/) has over 183,000,
+but it seems thin on Data Science.
 
 For example, I once needed code to find nearest-neighbors of a given
 data point.  I was able to immediately find not one but two packages to
-do this.  By contrast, lacking a central repository like CRAN for
-Python, just now I tried to find nearest-neighbor code for that
-language, and at least with my cursory search, came up empty-handed.
-I did find, e.g. Sci-kit code to do nearest-neighbor *classification*,
-but not k-NN code itself.
+do this.  By contrast, just now I tried to find nearest-neighbor code
+for Python and at least with my cursory search, came up empty-handed;
+there was just one implementation that described itself as simple and
+straightforward, nothing fast.
 
 ## Machine learning
 
