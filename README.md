@@ -118,7 +118,7 @@ Currently Python has better interfaces to GPUs.
 
 Though there are tools like swig etc. for interfacing Python to C/C++,
 as far is I know there is nothing remotely as powerful as R's Rcpp for
-this.
+this at present.  The Pybind11 package is being developed.
 
 In addition, R's new ALTREP idea has great potential for enhancing
 performance and usability.
