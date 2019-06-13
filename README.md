@@ -11,7 +11,7 @@ Hello!  This Web page is aimed at shedding some light on the perennial
 R-vs.-Python debates in the Data Science community.  As a professional
 computer scientist and statistician, I hope to shed some useful light on
 the topic.  I have potential bias &mdash; I've written 4 R-related books,
-and currently serve as Editorr-in-Chief of the *R Journal* &mdash; but I hope
+and currently serve as Editor-in-Chief of the *R Journal* &mdash; but I hope
 this analysis will be considered fair and helpful.
 
 ## Elegance
@@ -44,9 +44,8 @@ Python is sleek!
 
 *Huge win for R*.  
 
-To even get started in Data Science with Python, one
-must learn a lot of material not in base Python, e,g, NumPy, Pandas and
-matplotlib.  
+To even get started in Data Science with Python, one must learn a lot of
+material not in base Python, e.g., NumPy, Pandas and matplotlib.  
 
 By contrast, matrix types and basic graphics are built-in
 to base R.  The novice can be doing simple data analyses within minutes.
@@ -95,7 +94,7 @@ statement, "R is written *by* statisticians, *for* statisticians," which
 I'm pleased to see pop up here and there on occasion.  It's important!
 
 To be blunt, I find the machine learning people, who
-mostly advocate Python, to often have a poor understanding of, and in
+mostly advocate Python, often have a poor understanding of, and in
 some cases even a disdain for, the statistical issues in ML.  I was
 shocked recently, for instance, to see one of the most prominent ML
 people, state in his otherwise outstanding book that standardizing the
@@ -108,12 +107,10 @@ data to mean-0, variance-1 means one is assuming the data are Gaussian
 
 Neither the base version of R nor Python have good support for multicore
 computation.  Threads in Python are nice for I/O, but parallel
-computation using them is impossble, due to the infamous Global
+computation using them is impossible, due to the infamous Global
 Interpreter Lock.  Python's multiprocessing package is not a good
 workaround, nor is R's 'parallel' package.  External libraries
-supporting cluster computation are OK in both languages, but if nothing
-else, I must give the nod to R here due to such packages being easily
-findable in CRAN.
+supporting cluster computation are OK in both languages.
 
 Currently Python has better interfaces to GPUs.
 
