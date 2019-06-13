@@ -161,6 +161,14 @@ apparently meant to help beginners learn R, actually make it more
 difficult, I believe.  And the Tidyverse is of questionable value for
 advanced users.  
 
+## Linked data structures
+
+*Win for Python.*
+
+Classical computer science data structures, e.g. binary trees, are easy
+to implement in Python.  While this can be done in R using its 'list'
+class, I'd guess that it is slow.
+
 ## R/Python interoperability
 
 RStudio is to be commended for developing the reticulate package, to
