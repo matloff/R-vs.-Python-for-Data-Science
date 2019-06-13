@@ -48,7 +48,7 @@ To even get started in Data Science with Python, one
 must learn a lot of material not in base Python, e,g, NumPy, Pandas and
 matplotlib.  
 
-By contrast, matrix types and basic graphics are build-in
+By contrast, matrix types and basic graphics are built-in
 to base R.  The novice can be doing simple data analyses within minutes.
 Python libraries can be tricky to configure, even for the systems-savvy,
 while most R packages run right out of the box.
@@ -62,7 +62,8 @@ packages. [PyPI](https://pypi.org/) has over 183,000,
 but it seems thin on Data Science.
 
 For example, I once needed code to find nearest-neighbors of a given
-data point.  I was able to immediately find not one but two packages to
+data point.  (NOT code using that to do classification.)
+I was able to immediately find not one but two packages to
 do this.  By contrast, just now I tried to find nearest-neighbor code
 for Python and at least with my cursory search, came up empty-handed;
 there was just one implementation that described itself as simple and
@@ -145,7 +146,7 @@ computer scientists ought to be drooling over R.
 *Horrible loss for R*.
 
 Python is currently undergoing a transition from version 2.7 to 3.x.
-This will cause some disruption, but nothing to elaborate.
+This will cause some disruption, but nothing too elaborate.
 
 By contrast, R is rapidly devolving into two mutually unintelligible
 dialects, ordinary R and the Tidyverse.  Sadly, this is a conscious
