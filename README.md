@@ -154,6 +154,8 @@ dialects, ordinary R and the Tidyverse.  Sadly, this is a conscious
 effort by a commercial entity that has come to dominate the R world,
 RStudio.  I know and admire the people at RStudio, but a commercial
 entity should not have such undue influence on an open-source project.
+In addition, it is causing tension among some leaders in the R world,
+which is very troubling to me.
 
 It might be more acceptable if the Tidyverse were superior to ordinary
 R, but in my opinion it is not.  It makes things more difficult for
@@ -163,13 +165,18 @@ apparently meant to help beginners learn R, actually make it more
 difficult, I believe.  And the Tidyverse is of questionable value for
 advanced users.  
 
+Note:  In using the term "Tidyverse," I am not including pre-existing
+projects by Hadley Wickham, e.g. ggplot2 (which I use a lot) and dplyr.
+Instead, I am referring to things such as tibbles and pipes.
+
 ## Linked data structures
 
-*Likely win for Python.*
+*Win for Python.*
 
 Classical computer science data structures, e.g. binary trees, are easy
-to implement in Python.  While this can be done in R using its 'list'
-class, I'd guess that it is slow.
+to implement in Python.  While this can be done in R in various ways, it
+is not as good.  Not a big issue in Data Science, but it does come up in
+some contexts.
 
 ## R/Python interoperability
 
