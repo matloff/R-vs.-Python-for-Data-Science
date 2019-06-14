@@ -181,8 +181,8 @@ people at RStudio, *but a commercial entity should not have such undue
 influence on an open-source project.*  
 
 In addition, it is causing tension among some leaders in the R world,
-which is very troubling to me.  For instance, when the lightning-fast
-**data.table** package came out, rather than welcoming it as a hugely
+which is very troubling to me.  For instance, consider the lightning-fast
+**data.table** package. Rather than welcoming it as a hugely
 valuable contribution to R, RStudio treated it as a competitor,
 downplaying it and promoting their own product, dplyr.  This is simply
 not healthy for an open-source language.
