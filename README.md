@@ -181,4 +181,6 @@ environments and the like.
 
 At present, I do not recommend writing mixed Python/R code.
 
+## Thanks
 
+This document has benefited from various reader comments, notably Dirk Eddelbuettel.
