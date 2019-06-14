@@ -72,6 +72,10 @@ The following searches in PyPI turned up nothing: log-linear model;
 Poisson regression; instrumental variables; spatial
 data; familywise error rate; etc.
 
+This is not to say no Python libraries exist for these things; I am
+simply saying that they are not found in PyPI, whereas they are easily
+found in CRAN.
+
 ## Machine learning
 
 *Slight edge to Python here*. 
@@ -85,7 +89,7 @@ that matter, a pure-R version of TensorFlow could be developed.
 Meanwhile, I would claim that R's package availability for random forests
 and gradient boosting are outstanding.
 
-## Statisical correctness
+## Statistical correctness
 
 *Big win for R*.  
 
@@ -126,7 +130,9 @@ In addition, R's new ALTREP idea has great potential for enhancing
 performance and usability.
 
 On the other hand, the Cython and PyPy variants of Python can in some
-cases obviate the need for explicit C/C++ interface in the first place.
+cases obviate the need for explicit C/C++ interface in the first place;
+indeed some would say Cython IS a C/C++ interface.
+
 ## Object orientation, metaprogramming
 
 *Slight win for R*.
@@ -137,7 +143,7 @@ annoyed by the fact that I cannot print a function to the terminal,
 which I do a lot in R.
 
 Python has just one OOP paradigm.  In R, you have your choice of
-several, though some may debate that this is a good thing.
+several (S3, S4, R6 etc.), though some may debate that this is a good thing.
 
 Given R's magic metaprogramming features (code that produces code),
 computer scientists ought to be drooling over R.
@@ -150,12 +156,15 @@ Python is currently undergoing a transition from version 2.7 to 3.x.
 This will cause some disruption, but nothing too elaborate.
 
 By contrast, R is rapidly devolving into two mutually unintelligible
-dialects, ordinary R and the Tidyverse.  Sadly, this is a conscious
-effort by a commercial entity that has come to dominate the R world,
-RStudio.  I know and admire the people at RStudio, but a commercial
-entity should not have such undue influence on an open-source project.
-In addition, it is causing tension among some leaders in the R world,
-which is very troubling to me.
+dialects, ordinary R and the Tidyverse.  I, as a seasoned R programmer,
+cannot read Tidy code, as it calls numerous Tidyverse functions that I
+don't know.  Conversely, as one person in the Twitter discussion of this
+document noted (approvingly), "One can code in the Tidyverse while
+knowing very little R."
+
+Note:  In using the term "Tidyverse," I am not including pre-existing
+projects by Hadley Wickham, e.g. ggplot2 (which I use a lot) and dplyr.
+Instead, I am referring to things such as tibbles and pipes.
 
 It might be more acceptable if the Tidyverse were superior to ordinary
 R, but in my opinion it is not.  It makes things more difficult for
@@ -163,11 +172,19 @@ beginners.  E.g. the Tidyverse has so many functions, some complex, that
 must be learned to do what are very simple operations in base R.  Pipes,
 apparently meant to help beginners learn R, actually make it more
 difficult, I believe.  And the Tidyverse is of questionable value for
-advanced users.  
+advanced users.  See also ["The Tidyverse Curse](The Tidyverse Curse).
 
-Note:  In using the term "Tidyverse," I am not including pre-existing
-projects by Hadley Wickham, e.g. ggplot2 (which I use a lot) and dplyr.
-Instead, I am referring to things such as tibbles and pipes.
+The Tidyverse is a conscious promotional effort by a commercial entity
+that has come to dominate the R world, RStudio.  I know and admire the
+people at RStudio, *but a commercial entity should not have such undue
+influence on an open-source project.*  
+
+In addition, it is causing tension among some leaders in the R world,
+which is very troubling to me.  For instance, when the lightning-fast
+**data.table** package came out, rather than welcoming it as a hugely
+valuable contribution to R, RStudio treated it as a competitor,
+downplaying it and promoting their own product, dplyr.  This is simply
+not healthy for an open-source language.
 
 ## Linked data structures
 
@@ -177,6 +194,15 @@ Classical computer science data structures, e.g. binary trees, are easy
 to implement in Python.  While this can be done in R in various ways, it
 is not as good.  Not a big issue in Data Science, but it does come up in
 some contexts.
+
+## Online help
+
+*Big win for R.*
+
+To begin with, R's basic **help()** function is much more informative
+than Python's.  It's nicely supplemented by **example()**.  And most
+important, the custom of writing vignettes in R packages makes R a
+hands-down winner in this aspect.
 
 ## R/Python interoperability
 
@@ -190,4 +216,5 @@ At present, I do not recommend writing mixed Python/R code.
 
 ## Thanks
 
-This document has benefited from various reader comments, notably from Dirk Eddelbuettel.
+This document has benefited from various reader comments, notably from
+Dirk Eddelbuettel, as well as Paul Hewson and Bob Muenchen. 
