@@ -82,8 +82,8 @@ but R versions easily could be developed. The Python libraries' power
 comes from setting certain image-smoothing ops, which easily could be
 implemented in R's [Keras](https://keras.rstudio.com/) wrapper, and for
 that matter, a pure-R version of TensorFlow could be developed.
-Meanwhile, I would claim that R's package availabity for random forests
-and gradient boosting are outstandng.
+Meanwhile, I would claim that R's package availability for random forests
+and gradient boosting are outstanding.
 
 ## Statisical correctness
 
