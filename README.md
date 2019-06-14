@@ -168,11 +168,12 @@ Instead, I am referring to things such as tibbles and pipes.
 
 It might be more acceptable if the Tidyverse were superior to ordinary
 R, but in my opinion it is not.  It makes things more difficult for
-beginners.  E.g. the Tidyverse has so many functions, some complex, that
-must be learned to do what are very simple operations in base R.  Pipes,
-apparently meant to help beginners learn R, actually make it more
-difficult, I believe.  And the Tidyverse is of questionable value for
-advanced users.  See also ["The Tidyverse Curse](The Tidyverse Curse).
+beginning programmers.  E.g. the Tidyverse has so many functions, some
+complex, that must be learned to do what are very simple operations in
+base R.  Pipes, apparently meant to help beginners learn R, actually
+make it more difficult, I believe.  And the Tidyverse is of questionable
+value for advanced users.  See also ["The Tidyverse Curse](The Tidyverse
+Curse).
 
 The Tidyverse is a conscious promotional effort by a commercial entity
 that has come to dominate the R world, RStudio.  I know and admire the
