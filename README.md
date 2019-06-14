@@ -56,7 +56,7 @@ while most R packages run right out of the box.
 
 *Call it a tie.*
 
-[CRAN](https://cran.r-project.org/) has over 12,000
+[CRAN](https://cran.r-project.org/) has over 14,000
 packages. [PyPI](https://pypi.org/) has over 183,000,
 but it seems thin on Data Science.
 
