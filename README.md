@@ -193,8 +193,12 @@ students are being asked to learn a much larger volume of material,
 which is clearly bad pedagogy.  See also ["The Tidyverse
 Curse"](https://www.r-bloggers.com/the-tidyverse-curse), in which the
 author says *inter alia* that he uses "only" 60 Tidyverse functions --
-60!  The Tidyverse should be considered advanced R, not for beginners,
-just as is the case for most complext CRAN packages.
+60!  
+
+Again, I am certainly not saying one should only use base R; on the
+contrary, see my point above that CRAN is a major advantage of R.
+But the Tidyverse should be considered advanced R, not for beginners,
+just as is the case for most complex CRAN packages.
 
 The Tidyverse is a vigorous promotional effort by a commercial entity
 that has come to dominate the R world, RStudio.  I know and admire the
@@ -215,10 +219,12 @@ does not augur well for the future of the language.
 
 *Win for Python.*
 
+Not a big issue in Data Science, but it does come up in some contexts.
+
 Classical computer science data structures, e.g. binary trees, are easy
-to implement in Python.  While this can be done in R in various ways, it
-is not as good.  Not a big issue in Data Science, but it does come up in
-some contexts.
+to implement in Python.  It is not part of base R, but can be done in
+various ways, e.g. the datastructures package, which wraps the
+widely-used Boost C++ library.
 
 ## Online help
 
