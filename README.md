@@ -42,19 +42,26 @@ Python is sleek!
 
 ## Learning curve
 
-*Huge win for R*.  
+*Huge win for R.*  
+
+This is of particular interest to me, as an educator.  I've taught a
+number of subjects -- math, stat, CS and even English As a Second
+Language -- and have given intense thought to the learning process for
+many, many years.
 
 To even get started in Data Science with Python, one must learn a lot of
-material not in base Python, e.g., NumPy, Pandas and matplotlib.  
+material not in base Python, e.g., NumPy, Pandas and matplotlib. These
+libraries require a fair amount of computer systems sophistication.
 
 By contrast, matrix types and basic graphics are built-in
 to base R.  The novice can be doing simple data analyses within minutes.
+
 Python libraries can be tricky to configure, even for the systems-savvy,
 while most R packages run right out of the box.
 
-## Available libraries
+## Available libraries for Data Science
 
-*Call it a tie.*
+*Slight edge to R.*
 
 [CRAN](https://cran.r-project.org/) has over 14,000
 packages. [PyPI](https://pypi.org/) has over 183,000,
@@ -64,30 +71,36 @@ For example, I once needed code to do fast calculation of
 nearest-neighbors of a given data point.  (NOT code using that to do
 classification.) I was able to immediately find not one but two packages
 to do this.  By contrast, just now I tried to find nearest-neighbor code
-for Python and at least with my cursory search, came up empty-handed;
-there was just one implementation that described itself as simple and
-straightforward, nothing fast.
+for Python and at least with my cursory search in PyPi, came up
+empty-handed; there was just one implementation that described itself as
+simple and straightforward, nothing fast.
 
 The following searches in PyPI turned up nothing: log-linear model;
 Poisson regression; instrumental variables; spatial
 data; familywise error rate; etc.
 
 This is not to say no Python libraries exist for these things; I am
-simply saying that they are not found in PyPI, whereas they are easily
-found in CRAN.
+simply saying that they are not easily found in PyPI, whereas it is easy
+to find them in CRAN.
+
+The fact that R has a canonical package structure is a big advantage.
 
 ## Machine learning
 
 *Slight edge to Python here*. 
 
-The Pythonistas would point to a number of
-very finely-tuned libraries, e.g. AlexNet, for image recognition.  Good,
-but R versions easily could be developed. The Python libraries' power
-comes from setting certain image-smoothing ops, which easily could be
-implemented in R's [Keras](https://keras.rstudio.com/) wrapper, and for
-that matter, a pure-R version of TensorFlow could be developed.
-Meanwhile, I would claim that R's package availability for random forests
-and gradient boosting are outstanding.
+The R-vs.-Python debate is largely a statistics-vs.-CS debate, and since
+most research in neural networks has come from CS, available software
+for NNs is mostly in Python.  RStudio has done some excellent work in
+developing a Keras implementation, but so far R is limited in this
+realm.
+
+On the other hand, random forest research has been mainly pursued by the
+stat community, and in this realm I'd submit that R has the superior
+software.  R also has excellent packages for gradient boosting.
+
+I give the edge to Python here because for many people, machine learning
+means NNs.
 
 ## Statistical correctness
 
@@ -142,11 +155,12 @@ that more seriously than does Python.  Whenever I work in Python, I'm
 annoyed by the fact that I cannot print a function to the terminal,
 which I do a lot in R.
 
-Python has just one OOP paradigm.  In R, you have your choice of
-several (S3, S4, R6 etc.), though some may debate that this is a good thing.
+Python has just one OOP paradigm.  In R, you have your choice of several
+(S3, S4, R6 etc.), though some may debate whether this is a good thing.
 
 Given R's magic metaprogramming features (code that produces code),
-computer scientists ought to be drooling over R.
+computer scientists ought to be drooling over R.  But most CS people are
+unaware of it.
 
 ## Language unity
 
@@ -165,16 +179,22 @@ knowing very little R."
 Note that, in using the term "Tidyverse," I am not including
 pre-existing projects by Hadley Wickham, e.g. ggplot2 (which I use a
 lot) and dplyr.  Instead, I am referring to things such as tibbles and
-pipes.  I am especially concerned about the plethora of unnecessary
+pipes.  I am especially concerned about the plethora of 
 extra functions Tidyverse advocates burden students with learning, on
-top of rudimentary base R.
+top of rudimentary base R.  These functions are unnecssary, as most can
+be done simply in base R.
 
 Though advocates claim it works well in teaching beginning programmers,
-there has been no study of this claim, and I believe it is quite the
-opposite, i.e. it makes things more difficult for beginning programmers.
-As noted, the students are being asked to learn a much larger volume of
-material, which is bad pedagogy.  See also ["The Tidyverse
-Curse"](https://www.r-bloggers.com/the-tidyverse-curse).
+there has been no study of this claim, and I think the perceived success
+is psychological, a Bandwagon Effect.  On the contrary, I believe it is
+quite the opposite, i.e. using the Tidyverse makes things more difficult
+for learners without prior programming background.  As noted, the
+students are being asked to learn a much larger volume of material,
+which is clearly bad pedagogy.  See also ["The Tidyverse
+Curse"](https://www.r-bloggers.com/the-tidyverse-curse), in which the
+author says *inter alia* that he uses "only" 60 Tidyverse functions --
+60!  The Tidyverse should be considered advanced R, not for beginners,
+just as is the case for most complext CRAN packages.
 
 The Tidyverse is a vigorous promotional effort by a commercial entity
 that has come to dominate the R world, RStudio.  I know and admire the
@@ -187,7 +207,9 @@ treated it as a competitor, downplaying it and promoting their own
 product, dplyr.  This is simply not healthy for an open-source language.
 
 In addition, all this is causing tension between some leaders in the two
-camps, which is very troubling to me.  
+camps.  There are even two competing organizations, the R Foundation
+(which holds the copyright) and the R Consortium.  All this 
+does not augur well for the future of the language.
 
 ## Linked data structures
 
@@ -217,7 +239,17 @@ environments and the like.
 
 At present, I do not recommend writing mixed Python/R code.
 
+## Learning R and Python
+
+I have a [quick tutorial on R for
+non-programmers](http:github.com/matloff/fasteR), an evolving project. I
+also have a book, *the Art of R Programming*, NSP, 2011.
+
+I have a [tutorial on
+Python](http://heather.cs.ucdavis.edu/FastLanePython.pdf), for
+those with a strong programming background.
+
 ## Thanks
 
 This document has benefited from various reader comments, notably from
-Dirk Eddelbuettel, as well as Paul Hewson and Bob Muenchen. 
+Dirk Eddelbuettel, as well as Paul Hewson, Bob Muenchen and Inaki Ucar.
