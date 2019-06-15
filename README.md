@@ -75,9 +75,9 @@ for Python and at least with my cursory search in PyPi, came up
 empty-handed; there was just one implementation that described itself as
 simple and straightforward, nothing fast.
 
-The following searches in PyPI turned up nothing: log-linear model;
-Poisson regression; instrumental variables; spatial
-data; familywise error rate; etc.
+The following (again, cursory) searches in PyPI turned up nothing: EM
+algorithm; log-linear model; Poisson regression; instrumental variables;
+spatial data; familywise error rate; etc.
 
 This is not to say no Python libraries exist for these things; I am
 simply saying that they are not easily found in PyPI, whereas it is easy
