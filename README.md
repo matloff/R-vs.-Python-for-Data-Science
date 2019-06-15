@@ -10,7 +10,7 @@
 Hello!  This Web page is aimed at shedding some light on the perennial
 R-vs.-Python debates in the Data Science community.  As a professional
 computer scientist and statistician, I hope to shed some useful light on
-the topic.  I have potential bias &mdash; I've written 4 R-related books,
+the topic.  I have potential bias &mdash; I've written four R-related books,
 and currently serve as Editor-in-Chief of the *R Journal* &mdash; but I hope
 this analysis will be considered fair and helpful.
 
@@ -177,8 +177,8 @@ document noted (approvingly), "One can code in the Tidyverse while
 knowing very little R."
 
 Note that, in using the term "Tidyverse," I am not including
-pre-existing projects by Hadley Wickham, e.g. ggplot2 (which I use a
-lot) and dplyr.  Instead, I am referring to things such as tibbles and
+pre-existing projects by Hadley Wickham, e.g. **ggplot2** (which I use a
+lot) and **dplyr**.  Instead, I am referring to things such as tibbles and
 pipes.  I am especially concerned about the plethora of 
 extra functions Tidyverse advocates burden students with learning, on
 top of rudimentary base R.  These functions are unnecssary, as most can
@@ -208,7 +208,7 @@ influence on an open-source project.*
 For instance, consider the lightning-fast **data.table** package. Rather
 than welcoming it as a hugely valuable contribution to R, RStudio has
 treated it as a competitor, downplaying it and promoting their own
-product, dplyr.  This is simply not healthy for an open-source language.
+product, **dplyr**.  This is simply not healthy for an open-source language.
 
 In addition, all this is causing tension between some leaders in the two
 camps.  All this does not augur well for the future of the language.
@@ -221,7 +221,7 @@ Not a big issue in Data Science, but it does come up in some contexts.
 
 Classical computer science data structures, e.g. binary trees, are easy
 to implement in Python.  It is not part of base R, but can be done in
-various ways, e.g. the datastructures package, which wraps the
+various ways, e.g. the **datastructures** package, which wraps the
 widely-used Boost C++ library.
 
 ## Online help
@@ -235,7 +235,7 @@ hands-down winner in this aspect.
 
 ## R/Python interoperability
 
-RStudio is to be commended for developing the reticulate package, to
+RStudio is to be commended for developing the **reticulate** package, to
 serve as a bridge between Python and R.  It's an outstanding effort, and
 works well for pure computation.  But as far as I can tell, it does not
 solve the knotty problems that arise in Python, e.g. virtual
