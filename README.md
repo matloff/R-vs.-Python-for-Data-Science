@@ -211,9 +211,7 @@ treated it as a competitor, downplaying it and promoting their own
 product, dplyr.  This is simply not healthy for an open-source language.
 
 In addition, all this is causing tension between some leaders in the two
-camps.  There are even two competing organizations, the R Foundation
-(which holds the copyright) and the R Consortium.  All this 
-does not augur well for the future of the language.
+camps.  All this does not augur well for the future of the language.
 
 ## Linked data structures
 
