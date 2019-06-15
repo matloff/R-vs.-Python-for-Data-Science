@@ -162,31 +162,32 @@ don't know.  Conversely, as one person in the Twitter discussion of this
 document noted (approvingly), "One can code in the Tidyverse while
 knowing very little R."
 
-Note:  In using the term "Tidyverse," I am not including pre-existing
-projects by Hadley Wickham, e.g. ggplot2 (which I use a lot) and dplyr.
-Instead, I am referring to things such as tibbles and pipes, and the
-plethora of unnecessary extra functions Tidyverse advocates burden
-students with learning, on top of rudimentary base R.
+Note that, in using the term "Tidyverse," I am not including
+pre-existing projects by Hadley Wickham, e.g. ggplot2 (which I use a
+lot) and dplyr.  Instead, I am referring to things such as tibbles and
+pipes.  I am especially concerned about the plethora of unnecessary
+extra functions Tidyverse advocates burden students with learning, on
+top of rudimentary base R.
 
-It might be more acceptable if the Tidyverse were superior to ordinary
-R, but in my opinion it is not.  It makes things more difficult for
-beginning programmers.  E.g. the Tidyverse has so many functions, some
-complex, that must be learned to do what are very simple operations in
-base R.  Pipes, apparently meant to help beginners learn R, actually
-make it more difficult, I believe.  And the Tidyverse is of questionable
-value for advanced users.  See also ["The Tidyverse Curse"]( https://www.r-bloggers.com/the-tidyverse-curse).
+Though advocates claim it works well in teaching beginning programmers,
+there has been no study of this claim, and I believe it is quite the
+opposite, i.e. it makes things more difficult for beginning programmers.
+As noted, the students are being asked to learn a much larger volume of
+material, which is bad pedagogy.  See also ["The Tidyverse
+Curse"](https://www.r-bloggers.com/the-tidyverse-curse).
 
-The Tidyverse is a conscious promotional effort by a commercial entity
+The Tidyverse is a vigorous promotional effort by a commercial entity
 that has come to dominate the R world, RStudio.  I know and admire the
 people at RStudio, *but a commercial entity should not have such undue
 influence on an open-source project.*  
 
-In addition, it is causing tension among some leaders in the R world,
-which is very troubling to me.  For instance, consider the lightning-fast
-**data.table** package. Rather than welcoming it as a hugely
-valuable contribution to R, RStudio treated it as a competitor,
-downplaying it and promoting their own product, dplyr.  This is simply
-not healthy for an open-source language.
+For instance, consider the lightning-fast **data.table** package. Rather
+than welcoming it as a hugely valuable contribution to R, RStudio has
+treated it as a competitor, downplaying it and promoting their own
+product, dplyr.  This is simply not healthy for an open-source language.
+
+In addition, all this is causing tension between some leaders in the two
+camps, which is very troubling to me.  
 
 ## Linked data structures
 
