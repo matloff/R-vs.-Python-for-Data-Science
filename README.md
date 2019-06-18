@@ -10,9 +10,10 @@
 Hello!  This Web page is aimed at shedding some light on the perennial
 R-vs.-Python debates in the Data Science community.  As a professional
 computer scientist and statistician, I hope to shed some useful light on
-the topic.  I have potential bias &mdash; I've written four R-related books,
-and currently serve as Editor-in-Chief of the *R Journal* &mdash; but I hope
-this analysis will be considered fair and helpful.
+the topic.  I have potential bias:  I've written four R-related books,
+I've given a keynote talk at useR!; I currently serve as Editor-in-Chief
+of the *R Journal*; etc. But I hope this analysis will be considered
+fair and helpful.
 
 ## Elegance
 
@@ -166,6 +167,11 @@ unaware of it.
 
 *Horrible loss for R*.
 
+(During the Twitter discussion of this essay, this section nearly
+tripled in size, as more and more issues came up that I thought should
+be addressed.  Soon I will move this to a separate document, leaving
+just a summary here.)
+
 Python is currently undergoing a transition from version 2.7 to 3.x.
 This will cause some disruption, but nothing too elaborate.
 
@@ -188,12 +194,14 @@ Though advocates claim it works well in teaching beginning programmers,
 there has been no study of this claim, and I think the perceived success
 is psychological, a Bandwagon Effect.  On the contrary, I believe it is
 quite the opposite, i.e. using the Tidyverse makes things more difficult
-for learners without prior programming background.  As noted, the
-students are being asked to learn a much larger volume of material,
-which is clearly bad pedagogy.  See also ["The Tidyverse
+for learners without prior programming background.  
+
+As noted, the students are being asked to learn a much larger volume of
+material, which is clearly bad pedagogy.  See also ["The Tidyverse
 Curse"](https://www.r-bloggers.com/the-tidyverse-curse), in which the
 author says *inter alia* that he uses "only" 60 Tidyverse functions --
-60!  
+60!  Similarly, it is bad pedagogy to force students to learn tibbles, a
+more complex technology, instead of data frames, a simpler one.
 
 Again, I am certainly not saying one should only use base R; on the
 contrary, see my point above that CRAN is a major advantage of R.
