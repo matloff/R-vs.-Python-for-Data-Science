@@ -167,11 +167,6 @@ unaware of it.
 
 *Horrible loss for R*.
 
-(During the Twitter discussion of this essay, this section nearly
-tripled in size, as more and more issues came up that I thought should
-be addressed.  Soon I will move this to a separate document, leaving
-just a summary here.)
-
 Python is currently undergoing a transition from version 2.7 to 3.x.
 This will cause some disruption, but nothing too elaborate.
 
