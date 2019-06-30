@@ -4,16 +4,19 @@
 
 <img src = https://raw.githubusercontent.com/matloff/R-vs.-Python-for-Data-Science/master/Images/python-logo.png width = "300" />
 
-### Norm Matloff, Prof. of Computer Science, UC Davis; [my bio](http://heather.cs.ucdavis.edu/matloff.html)
+## Norm Matloff, Prof. of Computer Science, UC Davis; [my bio](http://heather.cs.ucdavis.edu/matloff.html)
 
 
 Hello!  This Web page is aimed at shedding some light on the perennial
 R-vs.-Python debates in the Data Science community.  As a professional
 computer scientist and statistician, I hope to shed some useful light on
-the topic.  I have potential bias:  I've written four R-related books,
-I've given a keynote talk at useR!; I currently serve as Editor-in-Chief
-of the *R Journal*; etc. But I hope this analysis will be considered
-fair and helpful.
+the topic.  
+
+I have potential bias:  I've written four R-related books, I've given
+keynote talks at useR! and other R conferences; I currently serve as
+Editor-in-Chief of the *R Journal*; etc. But I am also an enthusiastic
+Python coder, have been for many years.  I hope this analysis will be
+considered fair and helpful.
 
 ## Elegance
 
@@ -71,10 +74,10 @@ but it seems thin on Data Science.
 For example, I once needed code to do fast calculation of
 nearest-neighbors of a given data point.  (NOT code using that to do
 classification.) I was able to immediately find not one but two packages
-to do this.  By contrast, just now I tried to find nearest-neighbor code
-for Python and at least with my cursory search in PyPi, came up
-empty-handed; there was just one implementation that described itself as
-simple and straightforward, nothing fast.
+in CRAN to do this.  By contrast, recently I tried to find
+nearest-neighbor code for Python and at least with my cursory search in
+PyPi, came up empty-handed; there was just one implementation that
+described itself as simple and straightforward, nothing fast.
 
 The following (again, cursory) searches in PyPI turned up nothing: EM
 algorithm; log-linear model; Poisson regression; instrumental variables;
@@ -82,9 +85,14 @@ spatial data; familywise error rate; etc.
 
 This is not to say no Python libraries exist for these things; I am
 simply saying that they are not easily found in PyPI, whereas it is easy
-to find them in CRAN.
+to find them in CRAN.  
 
-The fact that R has a canonical package structure is a big advantage.
+And the fact that R has a canonical package structure is a big
+advantage.  When installing a new package, one knows exactly what to
+expect.  Similarly, R's *generic functions* are an enormous plus for R.
+When I'm using a new package, I know that I can probably use
+**print()**, **plot()**, **summary()** amd so on while I am exploring;
+All these form a "universal language" for packages.
 
 ## Machine learning
 
@@ -107,24 +115,24 @@ means NNs.
 
 *Big win for R*.  
 
-In my book, *the Art of R Programming*, I made the
-statement, "R is written *by* statisticians, *for* statisticians," which
-I'm pleased to see pop up here and there on occasion.  It's important!
+In my book, *the Art of R Programming*, I made the statement, "R is
+written *by* statisticians, *for* statisticians," a line which I'm
+pleased to see used by others on occasion.  It's important!
 
-To be blunt, I find the machine learning people, who
-mostly advocate Python, often have a poor understanding of, and in
-some cases even a disdain for, the statistical issues in ML.  I was
-shocked recently, for instance, to see one of the most prominent ML
-people, state in his otherwise outstanding book that standardizing the
-data to mean-0, variance-1 means one is assuming the data are Gaussian
-&mdash; absolutely false and misleading.
+To be frank, I find the machine learning people, who mostly advocate
+Python, often have a poor understanding of, and in some cases even a
+disdain for, the statistical issues in ML.  I was shocked recently, for
+instance, to see one of the most prominent ML people, state in his
+otherwise outstanding book that standardizing the data to mean-0,
+variance-1 means one is assuming the data are Gaussian &mdash;
+absolutely false and misleading.
 
 ## Parallel computation
 
 *Let's call it a tie.*  
 
 Neither the base version of R nor Python have good support for multicore
-computation.  Threads in Python are nice for I/O, but parallel
+computation.  Threads in Python are nice for I/O, but multicore
 computation using them is impossible, due to the infamous Global
 Interpreter Lock.  Python's multiprocessing package is not a good
 workaround, nor is R's 'parallel' package.  External libraries
@@ -152,7 +160,7 @@ indeed some would say Cython IS a C/C++ interface.
 *Slight win for R*.
 
 For instance, though functions are objects in both languages, R takes
-that more seriously than does Python.  Whenever I work in Python, I'm
+that further than does Python.  Whenever I work in Python, I'm
 annoyed by the fact that I cannot print a function to the terminal,
 which I do a lot in R.
 
