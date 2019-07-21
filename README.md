@@ -91,7 +91,7 @@ And the fact that R has a canonical package structure is a big
 advantage.  When installing a new package, one knows exactly what to
 expect.  Similarly, R's *generic functions* are an enormous plus for R.
 When I'm using a new package, I know that I can probably use
-**print()**, **plot()**, **summary()** amd so on while I am exploring;
+**print()**, **plot()**, **summary()**, and so on, while I am exploring;
 All these form a "universal language" for packages.
 
 ## Machine learning
@@ -116,14 +116,14 @@ means NNs.
 *Big win for R*.  
 
 In my book, *the Art of R Programming*, I made the statement, "R is
-written *by* statisticians, *for* statisticians," a line which I'm
+written *by* statisticians, *for* statisticians," a line which I've been
 pleased to see used by others on occasion.  It's important!
 
 To be frank, I find the machine learning people, who mostly advocate
 Python, often have a poor understanding of, and in some cases even a
 disdain for, the statistical issues in ML.  I was shocked recently, for
-instance, to see one of the most prominent ML people, state in his
-otherwise outstanding book that standardizing the data to mean-0,
+instance, to see one of the most prominent ML people state in his
+otherwise superb book that standardizing the data to mean-0,
 variance-1 means one is assuming the data are Gaussian &mdash;
 absolutely false and misleading.
 
@@ -140,11 +140,11 @@ supporting cluster computation are OK in both languages.
 
 Currently Python has better interfaces to GPUs.
 
-## C/C++ interface
+## C/C++ interface and performance enhancement
 
 *Slight win for R.*
 
-Though there are tools like swig etc. for interfacing Python to C/C++,
+Though there are tools like SWIG etc. for interfacing Python to C/C++,
 as far is I know there is nothing remotely as powerful as R's Rcpp for
 this at present.  The Pybind11 package is being developed.
 
@@ -160,9 +160,9 @@ indeed some would say Cython IS a C/C++ interface.
 *Slight win for R*.
 
 For instance, though functions are objects in both languages, R takes
-that further than does Python.  Whenever I work in Python, I'm
-annoyed by the fact that I cannot print a function to the terminal,
-which I do a lot in R.
+that further than does Python.  Whenever I work in Python, I'm annoyed
+by the fact that I cannot directly print a function to the terminal or
+edit it, which I do a lot in R.
 
 Python has just one OOP paradigm.  In R, you have your choice of several
 (S3, S4, R6 etc.), though some may debate whether this is a good thing.
@@ -183,7 +183,7 @@ dialects, ordinary R and the Tidyverse.  I, as a seasoned R programmer,
 cannot read Tidy code, as it calls numerous Tidyverse functions that I
 don't know.  Conversely, as one person in the Twitter discussion of this
 document noted (approvingly), "One can code in the Tidyverse while
-knowing very little R."
+knowing very little R."  
 
 I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
 Tidyverse.  For instance,I question the claim that it makes R more
