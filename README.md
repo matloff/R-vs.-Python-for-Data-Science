@@ -111,7 +111,7 @@ software.  R also has excellent packages for gradient boosting.
 I give the edge to Python here because for many people, machine learning
 means NNs.
 
-## Statistical correctness
+## Statistical sophistication
 
 *Big win for R*.  
 
@@ -173,7 +173,7 @@ unaware of it.
 
 ## Language unity
 
-*Horrible loss for R*.
+*Sad loss for R*.
 
 Python is currently undergoing a transition from version 2.7 to 3.x.
 This will cause some disruption, but nothing too elaborate.
