@@ -13,7 +13,7 @@ computer scientist and statistician, I hope to shed some useful light on
 the topic.  
 
 I have potential bias:  I've written four R-related books, I've given
-keynote talks at useR! and other R conferences; I currently serve as
+keynote talks at useR! and other R conferences; I have served as
 Editor-in-Chief of the *R Journal*; etc. But I am also an enthusiastic
 Python coder, have been for many years.  I hope this analysis will be
 considered fair and helpful.
