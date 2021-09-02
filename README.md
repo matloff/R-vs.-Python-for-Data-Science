@@ -9,8 +9,8 @@
 
 Hello!  This Web page is aimed at shedding some light on the perennial
 R-vs.-Python debates in the Data Science community.  As a professional
-computer scientist and statistician, I hope to shed some useful light on
-the topic.  
+computer scientist and statistician, I have a foot in both camps, and I
+hope to shed some useful light on the topic.  
 
 I have potential bias:  I've written four R-related books, I've given
 keynote talks at useR! and other R conferences; I have served as
@@ -133,10 +133,13 @@ absolutely false and misleading.
 
 Neither the base version of R nor Python have good support for multicore
 computation.  Threads in Python are nice for I/O, but multicore
-computation using them is impossible, due to the infamous Global
-Interpreter Lock.  Python's multiprocessing package is not a good
-workaround, nor is R's 'parallel' package.  External libraries
-supporting cluster computation are OK in both languages.
+computation using them is difficult, due to the infamous Global
+Interpreter Lock.  Python's **multiprocessing** package is much better
+than before, but still clunky.  R's **parallel** package does not allow
+shared memory.  (See my **Rdsm** package if you wish to use shared memory
+at the R level.) 
+
+External libraries supporting cluster computation are OK in both languages.
 
 Currently Python has better interfaces to GPUs.
 
@@ -167,27 +170,7 @@ edit it, which I do a lot in R.
 Python has just one OOP paradigm.  In R, you have your choice of several
 (S3, S4, R6 etc.), though some may debate whether this is a good thing.
 
-Given R's magic metaprogramming features (code that produces code),
-computer scientists ought to be drooling over R.  But most CS people are
-unaware of it.
-
-## Language unity
-
-*Sad loss for R*.
-
-Python is currently undergoing a transition from version 2.7 to 3.x.
-This will cause some disruption, but nothing too elaborate.
-
-By contrast, R is rapidly devolving into two mutually unintelligible
-dialects, ordinary R and the Tidyverse.  I, as a seasoned R programmer,
-cannot read Tidy code, as it calls numerous Tidyverse functions that I
-don't know.  Conversely, as one person in the Twitter discussion of this
-document noted (approvingly), "One can code in the Tidyverse while
-knowing very little R."  
-
-I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
-Tidyverse.  For instance,I question the claim that it makes R more
-accessible to nonprogrammers.
+R's metaprogramming features (code that produces code) are wonderful.
 
 ## Linked data structures
 
@@ -218,6 +201,61 @@ solve the knotty problems that arise in Python, e.g. virtual
 environments and the like.
 
 At present, I do not recommend writing mixed Python/R code.
+
+## Language unity
+
+*Sad loss for R*.
+
+Python recently underwent a transition from version 2.7 to 3.x.
+This caused some disruption, but nothing too elaborate.
+
+By contrast, R is rapidly devolving into two mutually unintelligible
+dialects, ordinary R and the tidyverse.  I, as a seasoned R programmer,
+cannot read tidy code, as it calls numerous tidyverse functions that I
+don't know.  Conversely, as one person in the Twitter discussion of this
+document noted (approvingly), "One can code in the tidyverse while
+knowing very little R."  
+
+I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
+tidyverse.  In particular, I strongly dispute the claim that the
+tidyverse makes R more accessible to nonprogrammers.  I believe the
+opposite is the case.  
+
+It ought to be obvious, for instance, that one shouldn't force non-coder
+R learners to use functional programming instead of loops, when they are
+still struggling to learn functions.  I've actually seen R learners
+apologize for using a loop.  This is craziness, folks.
+
+As a lifelong teacher and student of the human learning process, I
+regard the aggressive promotion of the tidyverse to non-coder learners
+of R as tragic.
+
+The tidyverse was developed with the express goal of redefining R.  This
+was done without collaborating with the R Core Team, the official body
+that develops R.  Thus it was inevitable that a bifurcation of the
+language would ensue.  RStudio, a commercial entity with large financial
+resources, has` aggressively promoted the tidyverse, making the
+bifurcation a reality.
+
+The R Core Team offered an olive branch by including a "pipe" capability
+to base R.  I've yet to see this gesture reciprocated by RStudio, but
+"hope springs eternal."
+
+## Attitudes
+
+There is a conscious aim in the R community for inclusiveness.  This is
+not the case for Python.
+
+The R community generally has a positive view of Python, and RStudio has
+reached out to the *Pythonistas* by developing the **reticulate** package.
+Though Python's Wes McKinney participated somewhat in the latter, I
+frequently find that the Python community, and for that matter CS in
+general, look down on R.
+
+Actually, given R's magical metaprogramming tools, computer scientists
+ought to be drooling over R.  But most CS people are unaware of it.
+
+I hope this situation improves in the coming years.
 
 ## Learning R and Python
 
