@@ -206,8 +206,9 @@ At present, I do not recommend writing mixed Python/R code.
 
 *Sad loss for R*.
 
-Python recently underwent a transition from version 2.7 to 3.x.
-This caused some disruption, but nothing too elaborate.
+Python recently underwent a major transition from version 2.7 to 3.x.
+All 2.7 code was rendered invalid.  This caused some disruption, but
+nothing too elaborate.
 
 By contrast, R is rapidly devolving into two mutually unintelligible
 dialects, ordinary R and the tidyverse.  I, as a seasoned R programmer,
@@ -216,26 +217,25 @@ don't know.  Conversely, as one person in the Twitter discussion of this
 document noted (approvingly), "One can code in the tidyverse while
 knowing very little R."  
 
-I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
-tidyverse.  In particular, I strongly dispute the claim that the
-tidyverse makes R more accessible to nonprogrammers.  I believe the
-opposite is the case.  
-
-It ought to be obvious, for instance, that one shouldn't force non-coder
-R learners to use functional programming instead of loops, when they are
-still struggling to learn functions.  I've actually seen R learners
-apologize for using a loop.  This is craziness, folks.
-
-As a lifelong teacher and student of the human learning process, I
-regard the aggressive promotion of the tidyverse to non-coder learners
-of R as tragic.
-
 The tidyverse was developed with the express goal of redefining R.  This
 was done without collaborating with the R Core Team, the official body
 that develops R.  Thus it was inevitable that a bifurcation of the
 language would ensue.  RStudio, a commercial entity with large financial
-resources, has` aggressively promoted the tidyverse, making the
+resources, has aggressively promoted the tidyverse, making the
 bifurcation a reality.
+
+I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
+tidyverse.  In particular, I strongly dispute the claim that the
+tidyverse makes R more accessible to nonprogrammers.  I believe the
+opposite is the case.  It ought to be obvious, for instance, that one
+shouldn't force non-coder R learners to use functional programming
+instead of loops, when they are still struggling to learn functions.
+I've actually seen R learners apologize for using a loop.  This is
+craziness, folks.
+
+As a lifelong teacher and student of the human learning process, I
+regard the aggressive promotion of the tidyverse to non-coder learners
+of R as tragic.
 
 The R Core Team offered an olive branch by including a "pipe" capability
 to base R.  I've yet to see this gesture reciprocated by RStudio, but
