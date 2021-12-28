@@ -63,6 +63,12 @@ to base R.  The novice can be doing simple data analyses within minutes.
 Python libraries can be tricky to configure, even for the systems-savvy,
 while most R packages run right out of the box.
 
+## Data Science tools
+**Huge win for R.**
+
+
+
+
 ## Available libraries for Data Science
 
 *Slight edge to R.*
