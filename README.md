@@ -66,7 +66,17 @@ while most R packages run right out of the box.
 ## Data Science tools
 **Huge win for R.**
 
+In my book, *The Art of R Programmming*, I wrote "R is written *by*
+statisticians, *for* statisticians," a line I've been pleased to see
+quoted now and then. One could update that to read "R is written *by*
+data scientists, *for* data scientists," and it is of crucial importance
+in our discussion here.
 
+Just look at an R function like **unique()**, for instance.  Sure one
+could write one's own function for this in Python (though it would take
+considerable work to include all the options), but it's right there in
+R, ready to use.  There are dozens and dozens of functions like this in
+R that are especially useful for Data Science but are missing in Python.
 
 
 ## Available libraries for Data Science
