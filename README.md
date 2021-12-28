@@ -75,9 +75,12 @@ in our discussion here.
 Just look at an R function like **unique()**, for instance.  Sure one
 could write one's own function for this in Python (though it would take
 considerable work to include all the options), but it's right there in
-R, ready to use.  There are dozens and dozens of functions like this in
+R, ready to use.  Same for **table()**, **ordet()** and so on.
+There are dozens and dozens of functions like this in
 R that are especially useful for Data Science but are missing in Python.
 
+All this is the result of the fact that, indeed, "R is written *by* data
+scientists, *for* data scientists." 
 
 ## Available libraries for Data Science
 
@@ -112,7 +115,7 @@ All these form a "universal language" for packages.
 
 ## Machine learning
 
-*Slight edge to Python here*. 
+*Slight edge to Python*. 
 
 The R-vs.-Python debate is largely a statistics-vs.-CS debate, and since
 most research in neural networks has come from CS, available software
@@ -122,7 +125,9 @@ realm.
 
 On the other hand, random forest research has been mainly pursued by the
 stat community, and in this realm I'd submit that R has the superior
-software.  R also has excellent packages for gradient boosting.
+software.  The **grf** package, for instance, allows linear
+interpolation within tree leaves, crucial for removing bias near the
+edges of the data.  R also has excellent packages for gradient boosting.
 
 I give the edge to Python here because for many people, machine learning
 means NNs.
