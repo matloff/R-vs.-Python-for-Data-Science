@@ -136,9 +136,8 @@ means NNs.
 
 *Big win for R*.  
 
-In my book, *the Art of R Programming*, I made the statement, "R is
-written *by* statisticians, *for* statisticians," a line which I've been
-pleased to see used by others on occasion.  It's important!
+As noted, I use the slogan, "R is written *by* statisticians, *for*
+statisticians." It's important!
 
 To be frank, I find the machine learning people, who mostly advocate
 Python, often have a poor understanding of, and in some cases even a
