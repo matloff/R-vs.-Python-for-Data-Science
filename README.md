@@ -75,7 +75,7 @@ in our discussion here.
 Just look at an R function like **unique()**, for instance.  Sure one
 could write one's own function for this in Python (though it would take
 considerable work to include all the options), but it's right there in
-R, ready to use.  Same for **table()**, **ordet()** and so on.
+R, ready to use.  Same for **table()**, **order()** and so on.
 There are dozens and dozens of functions like this in
 R that are especially useful for Data Science but are missing in Python.
 
