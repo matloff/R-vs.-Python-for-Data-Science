@@ -12,7 +12,7 @@ R-vs.-Python debates in the Data Science community.  As a professional
 computer scientist and statistician, I have a foot in both camps, and I
 hope to shed some useful light on the topic.  
 
-I have potential bias:  I've written four R-related books, I've given
+I have potential bias:  I've written four R-related books; I've given
 keynote talks at useR! and other R conferences; I have served as
 Editor-in-Chief of the *R Journal*; etc. But I am also an enthusiastic
 Python coder, have been for many years.  I hope this analysis will be
@@ -63,7 +63,7 @@ to base R.  The novice can be doing simple data analyses within minutes.
 Python libraries can be tricky to configure, even for the systems-savvy,
 while most R packages run right out of the box.
 
-## Data Science tools
+## Data Science emphasis
 **Huge win for R.**
 
 In my book, *The Art of R Programmming*, I wrote "R is written *by*
@@ -72,7 +72,7 @@ quoted now and then. One could update that to read "R is written *by*
 data scientists, *for* data scientists," and it is of crucial importance
 in our discussion here.
 
-Just look at an R function like **unique()**, for instance.  Sure one
+Just look at an R function like **unique()**, for instance.  Sure, one
 could write one's own function for this in Python (though it would take
 considerable work to include all the options), but it's right there in
 R, ready to use.  Same for **table()**, **order()** and so on.
@@ -141,11 +141,11 @@ statisticians." It's important!
 
 To be frank, I find the machine learning people, who mostly advocate
 Python, often have a poor understanding of, and in some cases even a
-disdain for, the statistical issues in ML.  I was shocked recently, for
-instance, to see one of the most prominent ML people state in his
-otherwise superb book that standardizing the data to mean-0,
-variance-1 means one is assuming the data are Gaussian &mdash;
-absolutely false and misleading.
+disdain for, the statistical issues in ML.  And, sadly, I often see
+ignorance.  I was shocked recently, for instance, to see one of the most
+prominent ML people state in his otherwise superb book that
+standardizing the data to mean-0, variance-1 means one is assuming the
+data are Gaussian &mdash; absolutely false and misleading.
 
 ## Parallel computation
 
