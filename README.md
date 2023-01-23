@@ -18,32 +18,6 @@ Editor-in-Chief of the *R Journal*; etc. But I am also an enthusiastic
 Python coder, have been for many years.  I hope this analysis will be
 considered fair and helpful.
 
-## Elegance
-
-*Clear win for Python.* 
-
-This is subjective, of course, but having
-written (and taught) in many different programming languages, I really
-appreciate Python's greatly reduced use of parentheses and braces:
-
-``` python
-if x > y: 
-   z = 5
-   w = 8
-```
-
-vs.
-
-``` r
-if (x > y)
-{ 
-   z = 5
-   w = 8
-}
-```
-
-Python is sleek!
-
 ## Learning curve
 
 *Huge win for R.*  
