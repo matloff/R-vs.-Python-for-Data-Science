@@ -129,8 +129,9 @@ Neither the base version of R nor Python have good support for multicore
 computation.  Threads in Python are nice for I/O, but multicore
 computation using them is difficult, due to the infamous Global
 Interpreter Lock.  Python's **multiprocessing** package is much better
-than before, but still clunky.  R's **parallel** package does not allow
-shared memory.  (See my **Rdsm** package if you wish to use shared memory
+than before, but still clunky.  R's **parallel** package does allows
+shared memory for Macs or Linux, but not on Windows platforms.  
+(See my **Rdsm** package if you wish to use shared memory
 at the R level.) 
 
 External libraries supporting cluster computation are OK in both languages.
