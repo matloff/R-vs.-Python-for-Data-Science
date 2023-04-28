@@ -53,6 +53,10 @@ R, ready to use.  Same for **table()**, **order()** and so on.
 There are dozens and dozens of functions like this in
 R that are especially useful for Data Science but are missing in Python.
 
+Generally an R data science function will be richer in coverage than its
+Python counterpart.  For instance, R's **hist()** functions offers many
+advanced options, not the case for Python.
+
 All this is the result of the fact that, indeed, "R is written *by* data
 scientists, *for* data scientists." 
 
