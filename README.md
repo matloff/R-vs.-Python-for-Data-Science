@@ -18,6 +18,9 @@ Editor-in-Chief of the *R Journal*; etc. But I am also an enthusiastic
 Python coder, have been for many years.  I hope this analysis will be
 considered fair and helpful.
 
+Again, **please note:**  The emphasis here is on Data Science, not
+Computer Science.  
+
 ## Learning curve
 
 *Huge win for R.*  
@@ -66,7 +69,7 @@ scientists, *for* data scientists."
 
 [CRAN](https://cran.r-project.org/) has over 14,000
 packages. [PyPI](https://pypi.org/) has over 183,000,
-but it seems thin on Data Science.
+but it seems thin on Data Science.  
 
 For example, I once needed code to do fast calculation of
 nearest-neighbors of a given data point.  (NOT code using that to do
@@ -82,14 +85,16 @@ spatial data; familywise error rate; etc.
 
 This is not to say no Python libraries exist for these things; I am
 simply saying that they are not easily found in PyPI, whereas it is easy
-to find them in CRAN.  
+to find them in CRAN, and indeed, such libraries are more likely to be
+in CRAN but not PyPI.  
 
 And the fact that R has a canonical package structure is a big
 advantage.  When installing a new package, one knows exactly what to
 expect.  Similarly, R's *generic functions* are an enormous plus for R.
 When I'm using a new package, I know that I can probably use
-**print()**, **plot()**, **summary()**, and so on, while I am exploring;
-All these form a "universal language" for packages.
+**print()**, **plot()**, **summary()**, and so on, while I am exploring,
+without checking the documentation.  These form a "universal language"
+for packages.
 
 ## Machine learning
 
@@ -99,7 +104,8 @@ The R-vs.-Python debate is largely a statistics-vs.-CS debate, and since
 most research in neural networks has come from CS, available software
 for NNs is mostly in Python.  RStudio has done some excellent work in
 developing a Keras implementation, but so far R is limited in this
-realm.
+realm.  (As a firm, RStudio is now called Posit, but the IDE is still
+RStudio.  I'll use that term for both here.)
 
 On the other hand, random forest research has been mainly pursued by the
 stat community, and in this realm I'd submit that R has the superior
@@ -164,7 +170,8 @@ indeed some would say Cython IS a C/C++ interface.
 For instance, though functions are objects in both languages, R takes
 that further than does Python.  Whenever I work in Python, I'm annoyed
 by the fact that I cannot directly print a function to the terminal or
-edit it, which I do a lot in R.
+edit it, which I do a lot in R.  (This goes back to the generic nature
+of R's **print()** function etc.)
 
 Python has just one OOP paradigm.  In R, you have your choice of several
 (S3, S4, R6 etc.), though some may debate whether this is a good thing.
@@ -210,35 +217,40 @@ All 2.7 code was rendered invalid.  This caused some disruption, but
 nothing too elaborate.
 
 By contrast, R is rapidly devolving into two mutually unintelligible
-dialects, ordinary R and the tidyverse.  I, as a seasoned R programmer,
-cannot read tidy code, as it calls numerous tidyverse functions that I
+dialects, ordinary R and the Tidyverse.  I, as a seasoned R programmer,
+cannot read tidy code, as it calls numerous Tidyverse functions that I
 don't know.  Conversely, as one person in the Twitter discussion of this
-document noted (approvingly), "One can code in the tidyverse while
+document noted (approvingly), "One can code in the Tidyverse while
 knowing very little R."  
 
-The tidyverse was developed with the express goal of redefining R.  This
+The Tidyverse was developed with the express goal of redefining R.  This
 was done without collaborating with the R Core Team, the official body
 that develops R.  Thus it was inevitable that a bifurcation of the
 language would ensue.  RStudio, a commercial entity with large financial
-resources, has aggressively promoted the tidyverse, making the
+resources, has aggressively promoted the Tidyverse, making the
 bifurcation a reality.
 
+I've been an enthusiastic supporter of RStudio since their very
+beginning, back when the IDE was still in beta.  Their work in promoting
+R, especially in terms of developing work environments, e.g. with
+Rmarkdown and Quarto, has been absolutely outstanding.  I make frequent
+use of packages such as **ggplot2** and **devtools**, and am a big fan
+of their Quarto document generator.  I do however believe they made a
+very unfortunate wrong turn in developing the Tidyverse.
+
 I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
-tidyverse.  In particular, I strongly dispute the claim that the
-tidyverse makes R more accessible to nonprogrammers.  I believe the
-opposite is the case.  It ought to be obvious, for instance, that one
-shouldn't force non-coder R learners to use functional programming
-instead of loops, when they are still struggling to learn functions.
-I've actually seen R learners apologize for using a loop.  This is
-craziness, folks.
+Tidyverse.  In particular, I strongly dispute the claim that the
+Tidyverse makes R more accessible to nonprogrammers.  I believe the
+opposite is the case--Tidy makes the learning curve **STEEPER** for
+noncoders.  It ought to be obvious, for instance, that one shouldn't
+force non-coder R learners to use functional programming instead of
+loops, when they are still struggling to learn functions.  I've actually
+seen R learners who've been taught via the Tidyverse apologize for using
+a loop.  This is craziness, folks.
 
 As a lifelong teacher and student of the human learning process, I
-regard the aggressive promotion of the tidyverse to non-coder learners
+regard the aggressive promotion of the Tidyverse to non-coder learners
 of R as tragic.
-
-The R Core Team offered an olive branch by including a "pipe" capability
-to base R.  I've yet to see this gesture reciprocated by RStudio, but
-"hope springs eternal."
 
 ## Attitudes
 
