@@ -218,50 +218,6 @@ pure computation.  But as far as I can tell, it does not solve the
 knotty problems that arise in Python, e.g. virtual environments and the
 like.  At present, I do not recommend writing mixed Python/R code.
 
-## Language unity
-
-*Sad loss for R*.
-
-Python recently underwent a major transition from version 2.7 to 3.x.
-All 2.7 code was rendered invalid.  This caused some disruption, but
-nothing too elaborate.
-
-By contrast, R is rapidly devolving into two mutually unintelligible
-dialects, ordinary R and the Tidyverse.  I, as a seasoned R programmer,
-cannot read tidy code, as it calls numerous Tidyverse functions that I
-don't know.  Conversely, as one person in the Twitter discussion of this
-document noted (approvingly), "One can code in the Tidyverse while
-knowing very little R."  
-
-The Tidyverse was developed with the express goal of redefining R.  This
-was done without collaborating with the R Core Team, the official body
-that develops R.  Thus it was inevitable that a bifurcation of the
-language would ensue.  RStudio/Posit, a commercial entity with large
-financial resources, has aggressively promoted the Tidyverse, making the
-bifurcation a reality.
-
-I've been an enthusiastic supporter of RStudio/Posit since their very
-beginning, back when the IDE was still in beta.  Their work in promoting
-R, especially in terms of developing work environments, e.g. with
-Rmarkdown and Quarto, has been absolutely outstanding.  I make frequent
-use of packages such as **ggplot2** and **devtools**, and am a big fan
-of their Quarto document generator.  I do however believe they made a
-very unfortunate wrong turn in developing the Tidyverse.
-
-I've been [a skeptic](http://github.com/matloff/TidyverseSkeptic) on
-Tidyverse.  In particular, I strongly dispute the claim that the
-Tidyverse makes R more accessible to nonprogrammers.  I believe the
-opposite is the case--Tidy makes the learning curve **STEEPER** for
-noncoders.  It ought to be obvious, for instance, that one shouldn't
-force non-coder R learners to use functional programming instead of
-loops, when they are still struggling to learn functions.  I've actually
-seen R learners who've been taught via the Tidyverse apologize for using
-a loop.  This is craziness, folks.
-
-As a lifelong teacher and student of the human learning process, I
-regard the aggressive promotion of the Tidyverse to non-coder learners
-of R as tragic.
-
 ## Learning R and Python
 
 I have a [quick tutorial on R for
