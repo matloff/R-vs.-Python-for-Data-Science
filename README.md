@@ -8,18 +8,22 @@
 
 
 Hello!  This Web page is aimed at shedding some light on the perennial
-R-vs.-Python debates in the Data Science community.  As a professional
-computer scientist and statistician, I have a foot in both camps, and I
-hope to shed some useful light on the topic.  
+R-vs.-Python debates in the Data Science community.  This is largely
+(though not exclusively) a debate between the Statistics (R) and
+Computer Science (Python) fields. Since I have a foot in both camps
+(I was a founding member of both the Statistics and Computer Science
+Departments at UC Davis), I hope to shed some useful light on the topic.  
 
 I have potential bias:  I've written four R-related books; I've given
 keynote talks at useR! and other R conferences; I have served as
 Editor-in-Chief of the *R Journal*; etc. But I am also an enthusiastic
-Python coder, have been for many years.  I hope this analysis will be
-considered fair and helpful.
+Python coder, have been for many years, and am the author of a [popular
+Python
+tutorial](https://www.cs.ucdavis.edu/~matloff/matloff/public_html/Python/PythonIntro.html).
+I hope this analysis will be considered fair and helpful.
 
 Again, **please note:**  The emphasis here is on Data Science, not
-Computer Science.  
+*Computer* Science.  
 
 ## Learning curve
 
@@ -34,31 +38,27 @@ To even get started in Data Science with Python, one must learn a lot of
 material not in base Python, e.g., NumPy, Pandas and matplotlib. These
 libraries require a fair amount of computer systems sophistication.
 
-By contrast, matrix types and basic graphics are built-in
-to base R.  The novice can be doing simple data analyses within minutes.
-
 Python libraries can be tricky to configure, even for the systems-savvy,
 while most R packages run right out of the box.
 
 ## Data Science emphasis
+
 **Huge win for R.**
 
 In my book, *The Art of R Programmming*, I wrote "R is written *by*
 statisticians, *for* statisticians," a line I've been pleased to see
-quoted now and then. One could update that to read "R is written *by*
+quoted by others. One could update that to read "R is written *by*
 data scientists, *for* data scientists," and it is of crucial importance
 in our discussion here.
 
-Just look at an R function like **unique()**, for instance.  Sure, one
-could write one's own function for this in Python (though it would take
-considerable work to include all the options), but it's right there in
-R, ready to use.  Same for **table()**, **order()** and so on.
-There are dozens and dozens of functions like this in
-R that are especially useful for Data Science but are missing in Python.
+Matrix types, data frames, missing-value handling, basic graphics,
+data-and-time processing, linear models, basic statistics, contingency
+tables and so on are built-in to base R.  The novice can be doing simple
+data analyses with these tools within minutes.
 
 Generally an R data science function will be richer in coverage than its
-Python counterpart.  For instance, R's **hist()** functions offers many
-advanced options, not the case for Python.
+Python counterpart.  For instance, R's histogram plot function,
+**hist()**, offers many advanced options, not the case for Python.
 
 All this is the result of the fact that, indeed, "R is written *by* data
 scientists, *for* data scientists." 
@@ -67,8 +67,8 @@ scientists, *for* data scientists."
 
 *Slight edge to R.*
 
-[CRAN](https://cran.r-project.org/) has over 14,000
-packages. [PyPI](https://pypi.org/) has over 183,000,
+[CRAN](https://cran.r-project.org/) has over 14,000 packages.
+[PyPI](https://pypi.org/) has over 183,000 (both numbers are growing),
 but it seems thin on Data Science.  
 
 For example, I once needed code to do fast calculation of
@@ -86,7 +86,8 @@ spatial data; familywise error rate; etc.
 This is not to say no Python libraries exist for these things; I am
 simply saying that they are not easily found in PyPI, whereas it is easy
 to find them in CRAN, and indeed, such libraries are more likely to be
-in CRAN but not PyPI.  
+in CRAN but not PyPI.  Once again, this reflects the difference in
+orientation, Data Science for R versus Computer Science for Python.
 
 And the fact that R has a canonical package structure is a big
 advantage.  When installing a new package, one knows exactly what to
@@ -98,23 +99,25 @@ for packages.
 
 ## Machine learning
 
-*Slight edge to Python*. 
+*Slight (or more) edge to Python*. 
 
-The R-vs.-Python debate is largely a statistics-vs.-CS debate, and since
-most research in neural networks has come from CS, available software
-for NNs is mostly in Python.  RStudio has done some excellent work in
-developing a Keras implementation, but so far R is limited in this
-realm.  (As a firm, RStudio is now called Posit, but the IDE is still
-RStudio.  I'll use that term for both here.)
+As noted, the R-vs.-Python debate is largely a Statistics-vs.-CS debate,
+and since most research in neural networks has come from CS, available
+software for NNs is mostly in Python.  To many in CS, machine learning
+means neural networks (NNs). 
 
-On the other hand, random forest research has been mainly pursued by the
-stat community, and in this realm I'd submit that R has the superior
-software.  The **grf** package, for instance, allows linear
-interpolation within tree leaves, crucial for removing bias near the
-edges of the data.  R also has excellent packages for gradient boosting.
+RStudio/Posit has done some excellent work in developing a Keras
+implementation, and there are R interfaces to PyTorch and so on, but so
+far R is limited in this realm.  Again, if one's view is that
+Data Science = NNs, then Python is the language of choice.
 
-I give the edge to Python here because for many people, machine learning
-means NNs.
+On the other hand, random forest research originated in the
+Statistics community, and most research in this field has been conducted
+there.  In this realm I'd submit that R has the superior software.  The
+**grf** package, for instance, allows linear interpolation within tree
+leaves, crucial for removing bias near the edges of the data.  R also
+has excellent packages for gradient boosting, another field originally
+invented in Statistics.
 
 ## Statistical sophistication
 
@@ -141,12 +144,13 @@ computation using them is difficult, due to the infamous Global
 Interpreter Lock.  Python's **multiprocessing** package is much better
 than before, but still clunky.  R's **parallel** package does allows
 shared memory for Macs or Linux, but not on Windows platforms.  
+
 (See my **Rdsm** package if you wish to use shared memory
 at the R level.) 
 
 External libraries supporting cluster computation are OK in both languages.
 
-Currently Python has better interfaces to GPUs.
+Currently Python has better interfaces to GPUs, but again, only for NNs.
 
 ## C/C++ interface and performance enhancement
 
@@ -170,24 +174,28 @@ indeed some would say Cython IS a C/C++ interface.
 For instance, though functions are objects in both languages, R takes
 that further than does Python.  Whenever I work in Python, I'm annoyed
 by the fact that I cannot directly print a function to the terminal or
-edit it, which I do a lot in R.  (This goes back to the generic nature
-of R's **print()** function etc.)
+edit it, which I do a lot in R.  (This goes back to the *polymorphic*
+nature of R's **print()** function etc.)
 
 Python has just one OOP paradigm.  In R, you have your choice of several
 (S3, S4, R6 etc.), though some may debate whether this is a good thing.
 
-R's metaprogramming features (code that produces code) are wonderful.
+R's metaprogramming features (code that produces code) are wonderful,
+arguably as powerful as, or more powerful than, those of Python.  In
+both languages, these are only for experts, but the point is that R is
+competitive with Python even in this highly CS-ish aspect.
 
 ## Linked data structures
 
 *Win for Python.*
 
-Not a big issue in Data Science, but it does come up in some contexts.
+**This is not a big issue in Data Science**, but it does come up in some
+contexts.
 
 Classical computer science data structures, e.g. binary trees, are easy
-to implement in Python.  It is not part of base R, but can be done in
-various ways, e.g. the **datastructures** package, which wraps the
-widely-used Boost C++ library.
+to implement in Python.  This can be done in R in various ways, e.g.
+with the **datastructures** package, which wraps the widely-used Boost
+C++ library, but it is not base-R.
 
 ## Online help
 
@@ -200,13 +208,15 @@ hands-down winner in this aspect.
 
 ## R/Python interoperability
 
-RStudio is to be commended for developing the **reticulate** package, to
-serve as a bridge between Python and R.  It's an outstanding effort, and
-works well for pure computation.  But as far as I can tell, it does not
-solve the knotty problems that arise in Python, e.g. virtual
-environments and the like.
+RStudio/Posit is to be commended for developing the **reticulate**
+package, to serve as a bridge between Python and R.  In a very 
+significant move, Python pandas creator Wes McKinney recently
+joined RStudio/Posit as a principal architect, 
 
-At present, I do not recommend writing mixed Python/R code.
+The **reticulate** package is an outstanding effort, and works well for
+pure computation.  But as far as I can tell, it does not solve the
+knotty problems that arise in Python, e.g. virtual environments and the
+like.  At present, I do not recommend writing mixed Python/R code.
 
 ## Language unity
 
@@ -226,11 +236,11 @@ knowing very little R."
 The Tidyverse was developed with the express goal of redefining R.  This
 was done without collaborating with the R Core Team, the official body
 that develops R.  Thus it was inevitable that a bifurcation of the
-language would ensue.  RStudio, a commercial entity with large financial
-resources, has aggressively promoted the Tidyverse, making the
+language would ensue.  RStudio/Posit, a commercial entity with large
+financial resources, has aggressively promoted the Tidyverse, making the
 bifurcation a reality.
 
-I've been an enthusiastic supporter of RStudio since their very
+I've been an enthusiastic supporter of RStudio/Posit since their very
 beginning, back when the IDE was still in beta.  Their work in promoting
 R, especially in terms of developing work environments, e.g. with
 Rmarkdown and Quarto, has been absolutely outstanding.  I make frequent
@@ -251,22 +261,6 @@ a loop.  This is craziness, folks.
 As a lifelong teacher and student of the human learning process, I
 regard the aggressive promotion of the Tidyverse to non-coder learners
 of R as tragic.
-
-## Attitudes
-
-There is a conscious aim in the R community for inclusiveness.  This is
-not the case for Python.
-
-The R community generally has a positive view of Python, and RStudio has
-reached out to the *Pythonistas* by developing the **reticulate** package.
-Though Python's Wes McKinney participated somewhat in the latter, I
-frequently find that the Python community, and for that matter CS in
-general, look down on R.
-
-Actually, given R's magical metaprogramming tools, computer scientists
-ought to be drooling over R.  But most CS people are unaware of it.
-
-I hope this situation improves in the coming years.
 
 ## Learning R and Python
 
