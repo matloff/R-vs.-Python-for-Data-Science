@@ -97,6 +97,22 @@ When I'm using a new package, I know that I can probably use
 without checking the documentation.  These form a "universal language"
 for packages.
 
+## Visualization tools
+
+*Win for R*
+
+Unlike Python, base R itself has sophisticated graphics utilities built
+in, and there are two outstanding graphics packages available,
+**ggplot2** and **lattice**.  The former is so widely used that many
+probably perceive it as being part of base R.
+
+But it goes far beyond that.  As noted, a major built-in function in R
+is **plot()**.  It is *polymorphic*, meaning that its role is different
+for each use case it has been written for.  This is a fancy term whose
+practical meaning is that the objects returned by R functions are
+typically paired with a visualization, which we can invoke simply by
+calling the generic **plot()**.
+
 ## Machine learning
 
 *Slight (or more) edge to Python*. 
@@ -157,8 +173,8 @@ Currently Python has better interfaces to GPUs, but again, only for NNs.
 *Slight win for R.*
 
 Though there are tools like SWIG etc. for interfacing Python to C/C++,
-as far is I know there is nothing remotely as powerful as R's Rcpp for
-this at present.  The Pybind11 package is being developed.
+as far is I know there is nothing remotely as powerful as R's **Rcpp** for
+this at present.  The **Pybind11** package is being developed.
 
 In addition, R's new ALTREP idea has great potential for enhancing
 performance and usability.
@@ -194,7 +210,7 @@ contexts.
 
 Classical computer science data structures, e.g. binary trees, are easy
 to implement in Python.  This can be done in R in various ways, e.g.
-with the **datastructures** package, which wraps the widely-used Boost
+with the **datastructures** package, which wraps the widely-used **Boost**
 C++ library, but it is not base-R.
 
 ## Online help
@@ -206,17 +222,44 @@ than Python's.  It's nicely supplemented by **example()**.  And most
 important, the custom of writing vignettes in R packages makes R a
 hands-down winner in this aspect.
 
-## R/Python interoperability
+# Essential for data scientists to know both R and Python
+
+Hopefully I've made a strong case above for using R in data science, in
+analytics, visualization and so on.  It is [widely used in business and
+industry](https://github.com/ThinkR-open/companies-using-r).
+In a very 
+significant move, Python **pandas** creator Wes McKinney recently
+joined RStudio/Posit as a principal architect (see **reticulate**.
+below).
+
+On the other hand, Python is my preferred tool in some applications.  An
+example is [OMSI](https://github.com/matloff/omsi), an online
+examination tool that my students and I developed.  Python's built-in
+threading made our work much easier in that project.
+
+I thus very strongly recommend that those considering a data science
+career not only *learn* both languages, but also *use* them, thus
+developing expertise.
+
+## Hybrid R/Python applications
+
+For similar reasons, some user apps may be best developed as a mixture
+of R and Python.  Here is the current status:
 
 RStudio/Posit is to be commended for developing the **reticulate**
-package, to serve as a bridge between Python and R.  In a very 
-significant move, Python pandas creator Wes McKinney recently
-joined RStudio/Posit as a principal architect, 
+package, to serve as a bridge between Python and R.  The package enables
+calling Python from R code.  For the opposite direction, calling R from
+Python, I recommend RPpy2, which is the approach we take in our **dsld**
+package.
 
 The **reticulate** package is an outstanding effort, and works well for
 pure computation.  But as far as I can tell, it does not solve the
 knotty problems that arise in Python, e.g. virtual environments and the
-like.  At present, I do not recommend writing mixed Python/R code.
+like.  The **RPy2** library has similar issues.
+
+At present, computer systems expertise--skill with environment
+variables, search paths and general coding ability-- is required for
+developing mixed R/Python apps.
 
 ## Learning R and Python
 
@@ -228,7 +271,10 @@ I have a [tutorial on
 Python](http://heather.cs.ucdavis.edu/FastLanePython.pdf), for
 those with a strong programming background.
 
-## Thanks
+# Thanks
 
 This document has benefited from various reader comments, notably from
 Dirk Eddelbuettel, as well as Paul Hewson, Bob Muenchen and Inaki Ucar.
+
+*Updated December 17, 2023*
+
