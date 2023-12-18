@@ -23,7 +23,9 @@ tutorial](https://www.cs.ucdavis.edu/~matloff/matloff/public_html/Python/PythonI
 I hope this analysis will be considered fair and helpful.
 
 Again, **please note:**  The emphasis here is on Data Science, not
-*Computer* Science.  
+*Computer* Science.  Note too that other than references to specific
+packages, ``R'' here means base R, not the Tidyverse, of which I have
+been [a critic](https://github.com/matloff/TidyverseSkeptic).
 
 ## Learning curve
 
